@@ -24,5 +24,8 @@ This message indicates that Flow 10 had not reached a completed state. It is **n
 
 Earlier system observations included approximately 2.7–3.5 tokens/second for CPU inference, low PentAGI container CPU utilization at one observation, and an empty `ollama ps` at that time. These point to potential performance and scheduling questions but do not explain the entire hour without a complete timestamped trace.
 
-## Evidence gaps
-No complete time-to-first-token, prompt-token count, number of agent calls, final prompt text, network latency trace, API cost, or end-to-end Blue target logs. 'Almost one hour' is a user-reported approximate duration, not an instrumented measurement.
+## Evidence 
+
+![qwen2.5:7b slow inference](/Images/quen%202.5%207B%20slow%20inference.png)
+
+![qwen2.5:7b timing out](/Images/quen%202.5%207B%20timeout.png)
